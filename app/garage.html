@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- nice-select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Рольставни</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Общая <br />
+            информация
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">О компании</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Доставка</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Оплата</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Акции</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рассрочка</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name"> Ворота </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Секционные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Роллетные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Промышленные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"> Панорамные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Откатные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Распашные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Калитки</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Заборы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Автоматика <br />
+            для ворот
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для откатных ворота</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для распашных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для гаражных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматкиа для промышленных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматкиа для промышленных ворот</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Роллетные <br />
+            сситемы
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на окна</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на двери</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на балкон</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Сантехничесике рольставни</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни прозрачные</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни серии TREND</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Рольставни серии PRESTIGE</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Рольставни серии SECURITI</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Роллетные ворота для гаража</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Роллетные ворота для въезда/забора</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Роллетные решетки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Роллетные шкафы, <br />
+            стеллажи и системы <br />
+            хранения
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">каталог роллетных шкафов</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">ограждение машино-мест</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">ограждение мото-мест</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">индивидуальные проекты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Каталог стеллажных систем</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Изготолвение стеллажных систем на заказ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Шлагбаумы <br />
+            и перегрузочная <br />
+            техника
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">шлагбаумы</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >уравнительные платформы (доклевеллеры)</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >герметизаторы проема (докшелтеры)</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">перегрузочные площадки</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">перегрузочные тамбуры</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu__bottom">
+        <div class="mobile-menu__btns">
+          <button class="mobile-menu__btn btn btn--green" type="button">
+            <svg
+              width="20"
+              height="17"
+              viewBox="0 0 20 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 17V8.5C3 6.13333 3.825 4.125 5.475 2.475C7.125 0.825 9.13333 0 11.5 0C13.8667 0 15.875 0.825 17.525 2.475C19.175 4.125 20 6.13333 20 8.5C20 10.8667 19.175 12.875 17.525 14.525C15.875 16.175 13.8667 17 11.5 17H3ZM5 15H11.5C13.3 15 14.8333 14.3667 16.1 13.1C17.3667 11.8333 18 10.3 18 8.5C18 6.7 17.3667 5.16667 16.1 3.9C14.8333 2.63333 13.3 2 11.5 2C9.7 2 8.16667 2.63333 6.9 3.9C5.63333 5.16667 5 6.7 5 8.5V15ZM11.5 12C12.4667 12 13.2917 11.6583 13.975 10.975C14.6583 10.2917 15 9.46667 15 8.5C15 7.53333 14.6583 6.70833 13.975 6.025C13.2917 5.34167 12.4667 5 11.5 5C10.5333 5 9.70833 5.34167 9.025 6.025C8.34167 6.70833 8 7.53333 8 8.5C8 9.46667 8.34167 10.2917 9.025 10.975C9.70833 11.6583 10.5333 12 11.5 12ZM11.5 10C11.0833 10 10.729 9.854 10.437 9.562C10.145 9.27 9.99933 8.916 10 8.5C10 8.08333 10.146 7.729 10.438 7.437C10.73 7.145 11.084 6.99933 11.5 7C11.9167 7 12.271 7.146 12.563 7.438C12.855 7.73 13.0007 8.084 13 8.5C13 8.91667 12.854 9.271 12.562 9.563C12.27 9.855 11.916 10.0007 11.5 10ZM0 17V12H2V17H0Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            Вызвать замерщика
+          </button>
+          <button class="mobile-menu__btn btn btn--burgundy" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+          <button class="mobile-menu__btn btn btn--blue-light" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            Написать нам
+          </button>
+        </div>
+        <button class="calc-btn" type="button">
+          <picture>
+            <source srcset="img/calc-icon.webp" type="image/webp" />
+            <img src="img/calc-icon.png" alt="img" />
+          </picture>
+          <span>
+            Калькулятор <br />
+            продукции Алютех
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__top-menu top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">О компании</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Доставка </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Оплата </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Акции </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Рассрочка </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__tools header-tools">
+          <div class="header-tools__address">
+            <svg>
+              <use xlink:href="img/sprite.svg#pin"></use>
+            </svg>
+
+            г. Москва, ул. Зорге, д. 19, 3 этаж
+          </div>
+          <a class="header-tools__cart" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            0 ₽
+          </a>
+          <select class="header-tools__select">
+            <option value="RU">RU</option>
+            <option value="EN">EN</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__middle">
+    <div class="container">
+      <div class="header__middle-inner">
+        <div class="phone-box">
+          <a class="phone-box__phone" href="tel:+74951047044">
+            <span> +7 (495) 104 - 70 - 44</span>
+
+            <span class="phone-box__icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16L0 8L1.4 6.575L7 12.175V0H9V12.175L14.6 6.575L16 8L8 16Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <button class="phone-box__call btn btn--transparent" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+        </div>
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="header-showroom">
+          <div class="header-showroom__top">
+            <picture>
+              <source srcset="img/your-location.webp" type="image/webp" />
+              <img
+                class="header-showroom__img"
+                src="img/your-location.png"
+                alt="img"
+              />
+            </picture>
+            <div class="header-showroom__text">
+              <p>
+                <span> Шоу - рум </span>
+                3d тур онлайн
+              </p>
+            </div>
+          </div>
+          <div class="header-showroom__rating yandex-rating">
+            <span class="yandex-rating__text">
+              Рейтинг компании <br />
+              в Yandex
+            </span>
+            <ul class="yandex-rating__stars">
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Ворота</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Автоматика для ворот</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Роллетные системы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                ролетые шкафы <br />
+                и системы хранения
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">стеллажи egr</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                шлагбаумы и <br />
+                перегрузочная техника
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__search search-block" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-inner">
+        <div class="phone-box">
+          <a class="phone-box__phone" href="tel:+74951047044">
+            <span> +7 (495) 104 - 70 - 44</span>
+
+            <span class="phone-box__icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16L0 8L1.4 6.575L7 12.175V0H9V12.175L14.6 6.575L16 8L8 16Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="header__mobile-phone">
+          <button
+            class="header__toggle"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+          <button class="phone-box__call btn btn--transparent" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+
+          <button class="header__search search-block" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="promo" style="background-image: url('img/promo/auto.jpg')">
+  <div class="container">
+    <div class="promo__wrapper">
+      <div class="promo__offer">
+        <h1 class="promo__title">Гаражные ворота</h1>
+        <p class="promo__text">
+          Современный гараж — это хорошо организованное помещение: теплое,
+          безопасное и защищенное от незваных гостей. Гаражные ворота позволят
+          создать именно такое помещение. А широкий выбор привлекательных по
+          дизайну конструкций поможет подобрать идеальный вариант для гаража
+          любого типа.
+        </p>
+        <button class="promo__btn btn" type="button">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="gates">
+  <div class="gates-nav">
+    <div class="container">
+      <div class="gates-nav__wrapper">
+        <ul class="gates-nav__list">
+          <li class="gates-nav__item">
+            <a class="gates-nav__link" href="#garage-gates">Гаражные ворота </a>
+          </li>
+          <li class="gates-nav__item">
+            <a class="gates-nav__link" href="#industrial-gates"
+              >Промышленные ворота</a
+            >
+          </li>
+          <li class="gates-nav__item">
+            <a class="gates-nav__link" href="#panoramic-gates">
+              Панорамные ворота
+            </a>
+          </li>
+          <li class="gates-nav__item">
+            <a class="gates-nav__link" href="#entry-gates"> Въездные ворота </a>
+          </li>
+        </ul>
+
+        <button class="gates-nav__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+
+          Связаться
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="gates__list">
+      <aricle class="automatic-gates-card anchor-card" id="garage-gates">
+        <div class="automatic-gates-card__left">
+          <h3 class="automatic-gates-card__title">Гаражные ворота</h3>
+          <p class="automatic-gates-card__text">
+            Стильные и надежные автоматические ворота, которые защитят гараж от
+            несанкционированного проникновения, уличного шума и холода.
+          </p>
+          <div class="automatic-gates-card__links">
+            <a class="automatic-gates-card__link" href="#">Роллетные ворота </a>
+            <a class="automatic-gates-card__link" href="#">Секционные ворота</a>
+          </div>
+          <a class="automatic-gates-card__btn" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 8H9V4H11V8ZM11 10H9V12H11V10ZM20 2V14C20 14.5304 19.7893 15.0391 19.4142 15.4142C19.0391 15.7893 18.5304 16 18 16H4L0 20V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H18C18.5304 0 19.0391 0.210714 19.4142 0.585786C19.7893 0.960859 20 1.46957 20 2ZM18 2H2V15.2L3.2 14H18V2Z"
+                fill="currentColor"
+              />
+            </svg>
+            Подробнее
+          </a>
+        </div>
+        <div class="automatic-gates-card__slider swiper">
+          <ul class="automatic-gates-card__slides swiper-wrapper">
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="automatic-gates-card__arrows">
+            <button class="swiper-button-prev" type="button"></button>
+            <button class="swiper-button-next" type="button"></button>
+          </div>
+        </div>
+      </aricle>
+      <aricle
+        class="automatic-gates-card automatic-gates-card--reverse anchor-card"
+        id="industrial-gates"
+      >
+        <div class="automatic-gates-card__left">
+          <h3 class="automatic-gates-card__title">Промышленные ворота</h3>
+          <p class="automatic-gates-card__text">
+            Прочные и долговечные изделия, рассчитанные на интенсивную
+            эксплуатацию и установку в различных климатических зонах.
+          </p>
+
+          <a class="automatic-gates-card__btn" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 8H9V4H11V8ZM11 10H9V12H11V10ZM20 2V14C20 14.5304 19.7893 15.0391 19.4142 15.4142C19.0391 15.7893 18.5304 16 18 16H4L0 20V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H18C18.5304 0 19.0391 0.210714 19.4142 0.585786C19.7893 0.960859 20 1.46957 20 2ZM18 2H2V15.2L3.2 14H18V2Z"
+                fill="currentColor"
+              />
+            </svg>
+            Подробнее
+          </a>
+        </div>
+        <div class="automatic-gates-card__slider swiper">
+          <ul class="automatic-gates-card__slides swiper-wrapper">
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="automatic-gates-card__arrows">
+            <button class="swiper-button-prev" type="button"></button>
+            <button class="swiper-button-next" type="button"></button>
+          </div>
+        </div>
+      </aricle>
+      <aricle
+        class="automatic-gates-card automatic-gates-card--triple anchor-card"
+        id="panoramic-gates"
+      >
+        <div class="automatic-gates-card__left">
+          <h3 class="automatic-gates-card__title">Панорамные ворота</h3>
+          <p class="automatic-gates-card__text">
+            Современные и практичные модели, которые украсят фасад здания и
+            обеспечат помещению естественное освещение.
+          </p>
+
+          <a class="automatic-gates-card__btn" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 8H9V4H11V8ZM11 10H9V12H11V10ZM20 2V14C20 14.5304 19.7893 15.0391 19.4142 15.4142C19.0391 15.7893 18.5304 16 18 16H4L0 20V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H18C18.5304 0 19.0391 0.210714 19.4142 0.585786C19.7893 0.960859 20 1.46957 20 2ZM18 2H2V15.2L3.2 14H18V2Z"
+                fill="currentColor"
+              />
+            </svg>
+            Подробнее
+          </a>
+        </div>
+        <div class="automatic-gates-card__slider swiper">
+          <ul class="automatic-gates-card__slides swiper-wrapper">
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="automatic-gates-card__arrows">
+            <button class="swiper-button-prev" type="button"></button>
+            <button class="swiper-button-next" type="button"></button>
+          </div>
+        </div>
+        <div class="automatic-gates-card__right">
+          <picture>
+            <source srcset="img/defense-car.webp" type="image/webp" />
+            <img src="img/defense-car.jpg" alt="img" />
+          </picture>
+          <p>Защитить ваш автомобиль и дом помогут гаражные ворота.</p>
+
+          <div class="automatic-gates-card__options">
+            <span class="automatic-gates-card__number">16</span>
+            <span class="automatic-gates-card__perfomance">
+              Вариантов <br />
+              исполнения
+            </span>
+          </div>
+        </div>
+      </aricle>
+      <aricle
+        class="automatic-gates-card automatic-gates-card--reverse anchor-card"
+        id="entry-gates"
+      >
+        <div class="automatic-gates-card__left">
+          <h3 class="automatic-gates-card__title">Въездные ворота</h3>
+          <p class="automatic-gates-card__text">
+            Функциональные и прочные конструкции, предназначенные для
+            обеспечения безопасности частной или промышленной территории.
+          </p>
+
+          <div class="automatic-gates-card__links">
+            <a class="automatic-gates-card__link" href="#">Откатные ворота </a>
+            <a class="automatic-gates-card__link" href="#">Распашные ворота</a>
+          </div>
+
+          <a class="automatic-gates-card__btn" href="#">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 8H9V4H11V8ZM11 10H9V12H11V10ZM20 2V14C20 14.5304 19.7893 15.0391 19.4142 15.4142C19.0391 15.7893 18.5304 16 18 16H4L0 20V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H18C18.5304 0 19.0391 0.210714 19.4142 0.585786C19.7893 0.960859 20 1.46957 20 2ZM18 2H2V15.2L3.2 14H18V2Z"
+                fill="currentColor"
+              />
+            </svg>
+            Подробнее
+          </a>
+        </div>
+        <div class="automatic-gates-card__slider swiper">
+          <ul class="automatic-gates-card__slides swiper-wrapper">
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+            <li class="automatic-gates-card__slide swiper-slide">
+              <picture>
+                <source srcset="img/gates-slider/1.webp" type="image/webp" />
+                <img src="img/gates-slider/1.jpg" alt="img" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="automatic-gates-card__arrows">
+            <button class="swiper-button-prev" type="button"></button>
+            <button class="swiper-button-next" type="button"></button>
+          </div>
+        </div>
+      </aricle>
+    </div>
+  </div>
+</section>
+
+        <section class="solutions">
+  <div class="container">
+    <h2 class="solutions__title">Популярные готовые решения</h2>
+    <p class="solutions__text">
+      Наш каталог поможет купить гаражные ворота актуальных расцветок. Яркие
+      иллюстрации готовой продукции позволят представить, как будет выглядеть
+      экстерьер. В каталоге вы найдете модели стандартных размеров для частных и
+      коммерческих гаражей.
+    </p>
+
+    <div class="solutions__slider swiper">
+      <ul class="solutions__slides swiper-wrapper">
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="solutions__slide swiper-slide">
+          <article class="product-card">
+            <div class="product-card__top">
+              <picture>
+                <source srcset="img/product-card/1.webp" type="image/webp" />
+                <img src="img/product-card/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Гаражные секционные ворота серии Trend</a>
+              </h3>
+              <p class="product-card__sizes">Размеры: 2500×2250 мм</p>
+              <div class="product-card__details">
+                <div class="product-card__prices">
+                  <span class="product-card__price product-card__price--old">
+                    83 020 ₽
+                  </span>
+                  <span class="product-card__price">70 570 ₽</span>
+                </div>
+                <div class="product-card__btns">
+                  <button
+                    class="product-card__btn btn btn--green"
+                    type="button"
+                  >
+                    ЗАКАЗАТЬ
+                  </button>
+                  <button
+                    class="product-card__btn btn btn--burgundy product-card__btn--calc"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.5 8H6V8.5C6 8.76522 6.10536 9.01957 6.29289 9.20711C6.48043 9.39464 6.73478 9.5 7 9.5C7.26522 9.5 7.51957 9.39464 7.70711 9.20711C7.89464 9.01957 8 8.76522 8 8.5V8H8.5C8.76522 8 9.01957 7.89464 9.20711 7.70711C9.39464 7.51957 9.5 7.26522 9.5 7C9.5 6.73478 9.39464 6.48043 9.20711 6.29289C9.01957 6.10536 8.76522 6 8.5 6H8V5.5C8 5.23478 7.89464 4.98043 7.70711 4.79289C7.51957 4.60536 7.26522 4.5 7 4.5C6.73478 4.5 6.48043 4.60536 6.29289 4.79289C6.10536 4.98043 6 5.23478 6 5.5V6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7C4.5 7.26522 4.60536 7.51957 4.79289 7.70711C4.98043 7.89464 5.23478 8 5.5 8ZM4.88 19.12C5.06736 19.3063 5.32081 19.4108 5.585 19.4108C5.84919 19.4108 6.10264 19.3063 6.29 19.12L7 18.41L7.71 19.12C7.89736 19.3063 8.15081 19.4108 8.415 19.4108C8.67919 19.4108 8.93264 19.3063 9.12 19.12C9.30625 18.9326 9.41079 18.6792 9.41079 18.415C9.41079 18.1508 9.30625 17.8974 9.12 17.71L8.41 17L9.12 16.29C9.28383 16.0987 9.36943 15.8526 9.35971 15.6009C9.34999 15.3493 9.24566 15.1105 9.06756 14.9324C8.88947 14.7543 8.65073 14.65 8.39905 14.6403C8.14738 14.6306 7.9013 14.7162 7.71 14.88L7 15.59L6.29 14.88C6.0987 14.7162 5.85262 14.6306 5.60095 14.6403C5.34927 14.65 5.11053 14.7543 4.93244 14.9324C4.75434 15.1105 4.65001 15.3493 4.64029 15.6009C4.63057 15.8526 4.71617 16.0987 4.88 16.29L5.59 17L4.88 17.71C4.69375 17.8974 4.58921 18.1508 4.58921 18.415C4.58921 18.6792 4.69375 18.9326 4.88 19.12ZM20 1H4C3.20435 1 2.44129 1.31607 1.87868 1.87868C1.31607 2.44129 1 3.20435 1 4V20C1 20.7956 1.31607 21.5587 1.87868 22.1213C2.44129 22.6839 3.20435 23 4 23H20C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20V4C23 3.20435 22.6839 2.44129 22.1213 1.87868C21.5587 1.31607 20.7956 1 20 1ZM11 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V13H11V21ZM11 11H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H11V11ZM21 20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H13V13H21V20ZM21 11H13V3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V11ZM15.5 16.5H18.5C18.7652 16.5 19.0196 16.3946 19.2071 16.2071C19.3946 16.0196 19.5 15.7652 19.5 15.5C19.5 15.2348 19.3946 14.9804 19.2071 14.7929C19.0196 14.6054 18.7652 14.5 18.5 14.5H15.5C15.2348 14.5 14.9804 14.6054 14.7929 14.7929C14.6054 14.9804 14.5 15.2348 14.5 15.5C14.5 15.7652 14.6054 16.0196 14.7929 16.2071C14.9804 16.3946 15.2348 16.5 15.5 16.5ZM18.5 6H15.5C15.2348 6 14.9804 6.10536 14.7929 6.29289C14.6054 6.48043 14.5 6.73478 14.5 7C14.5 7.26522 14.6054 7.51957 14.7929 7.70711C14.9804 7.89464 15.2348 8 15.5 8H18.5C18.7652 8 19.0196 7.89464 19.2071 7.70711C19.3946 7.51957 19.5 7.26522 19.5 7C19.5 6.73478 19.3946 6.48043 19.2071 6.29289C19.0196 6.10536 18.7652 6 18.5 6ZM15.5 19.5H18.5C18.7652 19.5 19.0196 19.3946 19.2071 19.2071C19.3946 19.0196 19.5 18.7652 19.5 18.5C19.5 18.2348 19.3946 17.9804 19.2071 17.7929C19.0196 17.6054 18.7652 17.5 18.5 17.5H15.5C15.2348 17.5 14.9804 17.6054 14.7929 17.7929C14.6054 17.9804 14.5 18.2348 14.5 18.5C14.5 18.7652 14.6054 19.0196 14.7929 19.2071C14.9804 19.3946 15.2348 19.5 15.5 19.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+    </div>
+  </div>
+</section>
+
+        <section class="discount">
+  <div class="discount__slider swiper">
+    <ul class="discount__slides swiper-wrapper">
+      <li class="discount__slide swiper-slide">
+        <div class="discount__wrapper">
+          <div
+            class="discount__img"
+            style="background-image: url(img/discount-bg.png)"
+          ></div>
+          <div class="discount__left">
+            <h2 class="discount__title">Скидка 10%</h2>
+            <p class="discount__text">
+              При заказе въездных ворот, забора или калитки с заполнением
+              сэндвич-панелями.
+            </p>
+            <a class="discount__btn btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </li>
+      <li class="discount__slide swiper-slide">
+        <div class="discount__wrapper">
+          <div
+            class="discount__img"
+            style="background-image: url(img/discount-bg.png)"
+          ></div>
+          <div class="discount__left">
+            <h2 class="discount__title">Скидка 10%</h2>
+            <p class="discount__text">
+              При заказе въездных ворот, забора или калитки с заполнением
+              сэндвич-панелями.
+            </p>
+            <a class="discount__btn btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </li>
+      <li class="discount__slide swiper-slide">
+        <div class="discount__wrapper">
+          <div
+            class="discount__img"
+            style="background-image: url(img/discount-bg.png)"
+          ></div>
+          <div class="discount__left">
+            <h2 class="discount__title">Скидка 10%</h2>
+            <p class="discount__text">
+              При заказе въездных ворот, забора или калитки с заполнением
+              сэндвич-панелями.
+            </p>
+            <a class="discount__btn btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <div class="footer__logo">РОЛСТАВНИ <span>ОРГ</span></div>
+
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__copy">
+            <span>Copyright © “Rolstavni” 2022</span>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Каталог</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Роллетные системы Алютех</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Автоматика для ворот</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Перегрузочная техника</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Шлакбаумы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Перегрузочная техника</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Акции</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">КОМПАНИЯ</span>
+          <ul class="footer__list footer__list--pr">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Поддержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Покупателю</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">КОНТАКТЫ</span>
+
+          <div class="footer__col-inner">
+            <div class="footer-contacts">
+              <div
+                class="footer-contacts__item footer-contacts__item--location"
+              >
+                <p>Офис: Москва, ул. Название улицы 10, корп. 11</p>
+                <p>Производство: Москва, ул. Назваие улицы 12, корп. 13</p>
+              </div>
+              <div class="footer-contacts__item footer-contacts__item--phones">
+                <a class="footer-contacts__link" href="+7495123456798">
+                  + 7 (495) 123 45 67 98
+                </a>
+                <a class="footer-contacts__link" href="+7495123456798">
+                  + 7 (495) 123 45 67 98
+                </a>
+              </div>
+              <div
+                class="footer-contacts__item footer-contacts__item--schedule"
+              >
+                <p>Прием звонков: с 9:00 до 21:00 (МСК)</p>
+              </div>
+              <div class="footer-contacts__item footer-contacts__item--mail">
+                <a class="footer-contacts__link" href="info-rolstavmi@mail.ru">
+                  info-rolstavmi@mail.ru
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__btns">
+              <button class="footer__btn btn btn--green" type="button">
+                Заказать звонок
+              </button>
+              <a class="footer__btn btn btn--blue-light" href="#">
+                Написать на почту
+              </a>
+              <button class="footer__btn btn btn--burgundy" type="button">
+                Вызвать замерщика
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__text">
+        <p>
+          Все права защищены. Вся предоставленая на сайте информация, касающаяся
+          технических характеристик, наличия и стоимость товаров, носит
+          информационный характер и не является публичной офертой. Для более
+          подробной информацнеобходимо обратиться в офис компании или позвонить
+          по телефону +7 (495) 104 70 44
+        </p>
+      </div>
+      <div class="footer-bottom__rating yandex-rating">
+        <span class="yandex-rating__text"
+          >Рейтинг компании <br />
+          в Yandex</span
+        >
+        <ul class="yandex-rating__stars">
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star yandex-rating__star--disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- nice-select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

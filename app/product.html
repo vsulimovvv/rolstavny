@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- nice-select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Рольставни</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Общая <br />
+            информация
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">О компании</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Доставка</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Оплата</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Акции</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рассрочка</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name"> Ворота </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Секционные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Роллетные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Промышленные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"> Панорамные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Откатные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Распашные ворота</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Калитки</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Заборы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Автоматика <br />
+            для ворот
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для откатных ворота</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для распашных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматика для гаражных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматкиа для промышленных ворот</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Автоматкиа для промышленных ворот</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Роллетные <br />
+            сситемы
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на окна</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на двери</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни на балкон</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Сантехничесике рольставни</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни прозрачные</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Рольставни серии TREND</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Рольставни серии PRESTIGE</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Рольставни серии SECURITI</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Роллетные ворота для гаража</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Роллетные ворота для въезда/забора</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Роллетные решетки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Роллетные шкафы, <br />
+            стеллажи и системы <br />
+            хранения
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">каталог роллетных шкафов</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">ограждение машино-мест</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">ограждение мото-мест</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">индивидуальные проекты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Каталог стеллажных систем</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >Изготолвение стеллажных систем на заказ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__col">
+          <span class="mobile-menu__name">
+            Шлагбаумы <br />
+            и перегрузочная <br />
+            техника
+          </span>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">шлагбаумы</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >уравнительные платформы (доклевеллеры)</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"
+                >герметизаторы проема (докшелтеры)</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">перегрузочные площадки</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">перегрузочные тамбуры</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu__bottom">
+        <div class="mobile-menu__btns">
+          <button class="mobile-menu__btn btn btn--green" type="button">
+            <svg
+              width="20"
+              height="17"
+              viewBox="0 0 20 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 17V8.5C3 6.13333 3.825 4.125 5.475 2.475C7.125 0.825 9.13333 0 11.5 0C13.8667 0 15.875 0.825 17.525 2.475C19.175 4.125 20 6.13333 20 8.5C20 10.8667 19.175 12.875 17.525 14.525C15.875 16.175 13.8667 17 11.5 17H3ZM5 15H11.5C13.3 15 14.8333 14.3667 16.1 13.1C17.3667 11.8333 18 10.3 18 8.5C18 6.7 17.3667 5.16667 16.1 3.9C14.8333 2.63333 13.3 2 11.5 2C9.7 2 8.16667 2.63333 6.9 3.9C5.63333 5.16667 5 6.7 5 8.5V15ZM11.5 12C12.4667 12 13.2917 11.6583 13.975 10.975C14.6583 10.2917 15 9.46667 15 8.5C15 7.53333 14.6583 6.70833 13.975 6.025C13.2917 5.34167 12.4667 5 11.5 5C10.5333 5 9.70833 5.34167 9.025 6.025C8.34167 6.70833 8 7.53333 8 8.5C8 9.46667 8.34167 10.2917 9.025 10.975C9.70833 11.6583 10.5333 12 11.5 12ZM11.5 10C11.0833 10 10.729 9.854 10.437 9.562C10.145 9.27 9.99933 8.916 10 8.5C10 8.08333 10.146 7.729 10.438 7.437C10.73 7.145 11.084 6.99933 11.5 7C11.9167 7 12.271 7.146 12.563 7.438C12.855 7.73 13.0007 8.084 13 8.5C13 8.91667 12.854 9.271 12.562 9.563C12.27 9.855 11.916 10.0007 11.5 10ZM0 17V12H2V17H0Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            Вызвать замерщика
+          </button>
+          <button class="mobile-menu__btn btn btn--burgundy" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+          <button class="mobile-menu__btn btn btn--blue-light" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            Написать нам
+          </button>
+        </div>
+        <button class="calc-btn" type="button">
+          <picture>
+            <source srcset="img/calc-icon.webp" type="image/webp" />
+            <img src="img/calc-icon.png" alt="img" />
+          </picture>
+          <span>
+            Калькулятор <br />
+            продукции Алютех
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__top-menu top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">О компании</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Доставка </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Оплата </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Акции </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Рассрочка </a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__tools header-tools">
+          <div class="header-tools__address">
+            <svg>
+              <use xlink:href="img/sprite.svg#pin"></use>
+            </svg>
+
+            г. Москва, ул. Зорге, д. 19, 3 этаж
+          </div>
+          <a class="header-tools__cart" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            0 ₽
+          </a>
+          <select class="header-tools__select">
+            <option value="RU">RU</option>
+            <option value="EN">EN</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__middle">
+    <div class="container">
+      <div class="header__middle-inner">
+        <div class="phone-box">
+          <a class="phone-box__phone" href="tel:+74951047044">
+            <span> +7 (495) 104 - 70 - 44</span>
+
+            <span class="phone-box__icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16L0 8L1.4 6.575L7 12.175V0H9V12.175L14.6 6.575L16 8L8 16Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <button class="phone-box__call btn btn--transparent" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+        </div>
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="header-showroom">
+          <div class="header-showroom__top">
+            <picture>
+              <source srcset="img/your-location.webp" type="image/webp" />
+              <img
+                class="header-showroom__img"
+                src="img/your-location.png"
+                alt="img"
+              />
+            </picture>
+            <div class="header-showroom__text">
+              <p>
+                <span> Шоу - рум </span>
+                3d тур онлайн
+              </p>
+            </div>
+          </div>
+          <div class="header-showroom__rating yandex-rating">
+            <span class="yandex-rating__text">
+              Рейтинг компании <br />
+              в Yandex
+            </span>
+            <ul class="yandex-rating__stars">
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+              <li class="yandex-rating__star">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Ворота</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Автоматика для ворот</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Роллетные системы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                ролетые шкафы <br />
+                и системы хранения
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">стеллажи egr</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                шлагбаумы и <br />
+                перегрузочная техника
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__search search-block" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-inner">
+        <div class="phone-box">
+          <a class="phone-box__phone" href="tel:+74951047044">
+            <span> +7 (495) 104 - 70 - 44</span>
+
+            <span class="phone-box__icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16L0 8L1.4 6.575L7 12.175V0H9V12.175L14.6 6.575L16 8L8 16Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="header__mobile-phone">
+          <button
+            class="header__toggle"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+          <button class="phone-box__call btn btn--transparent" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            Обратный звонок
+          </button>
+
+          <button class="header__search search-block" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="product">
+  <div class="container">
+    <div class="product__wrapper">
+      <div class="product__slider">
+        <div class="slider-thumbs">
+          <div class="slider-thumbs__main swiper" id="slider-main">
+            <ul class="swiper-wrapper">
+              <li
+                class="swiper-slide"
+                data-fancybox="product"
+                data-src="img/product-slider/big.jpg"
+              >
+                <picture>
+                  <source
+                    srcset="img/product-slider/big.webp"
+                    type="image/webp"
+                  />
+                  <img src="img/product-slider/big.jpg" alt="img" />
+                </picture>
+              </li>
+              <li
+                class="swiper-slide"
+                data-fancybox="product"
+                data-src="img/product-slider/big.jpg"
+              >
+                <picture>
+                  <source
+                    srcset="img/product-slider/big.webp"
+                    type="image/webp"
+                  />
+                  <img src="img/product-slider/big.jpg" alt="img" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider-thumbs__nav">
+            <div class="slider-thumbs__nav-wrap swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide slider-nav__slide">
+                  <picture>
+                    <source
+                      srcset="img/product-slider/small.webp"
+                      type="image/webp"
+                    />
+                    <img src="img/product-slider/small.jpg" alt="img" />
+                  </picture>
+                </li>
+                <li class="swiper-slide slider-nav__slide">
+                  <picture>
+                    <source
+                      srcset="img/product-slider/small.webp"
+                      type="image/webp"
+                    />
+                    <img src="img/product-slider/small.jpg" alt="img" />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__right">
+        <h1 class="product__title">
+          Секционные ворота ALUTECH Prestige с электроприводом 2750×2500 мм
+        </h1>
+
+        <div class="product__details">
+          <div class="product__tabs product-tabs">
+            <div class="product-tabs__top">
+              <ul class="product-tabs__list">
+                <li class="product-tabs__item">
+                  <button class="product-tabs__btn" type="button">
+                    Характеристики
+                  </button>
+                </li>
+                <li class="product-tabs__item">
+                  <button class="product-tabs__btn" type="button">
+                    Комплект поставки
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-tabs__content">
+              <div class="product-tabs__rows">
+                <div class="product-tabs__row">
+                  <div>Серия:</div>
+                  <div>Prestige</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Размеры:</div>
+                  <div>2750×2500 мм</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Тип панели:</div>
+                  <div>L-гофр</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Цвет:</div>
+                  <div>ADS703 (Антрацит)</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Управление:</div>
+                  <div>Автоматическое, LG-800</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Тип пружин:</div>
+                  <div>Пружины растяжения</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-tabs__content">
+              <div class="product-tabs__rows">
+                <div class="product-tabs__row">
+                  <div>Серия:</div>
+                  <div>Prestige</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Размеры:</div>
+                  <div>2750×2500 мм</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Тип панели:</div>
+                  <div>L-гофр</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Цвет:</div>
+                  <div>ADS703 (Антрацит)</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Управление:</div>
+                  <div>Автоматическое, LG-800</div>
+                </div>
+                <div class="product-tabs__row">
+                  <div>Тип пружин:</div>
+                  <div>Пружины растяжения</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-showroom">
+            <a class="product-showroom__inner" href="#">
+              <span class="product-showroom__show">
+                <svg>
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+              </span>
+              <span class="product-showroom__link" href="#">
+                Посмотреть образец <br />
+                в шоу-руме
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="product__bottom">
+          <div class="product__price">
+            <span class="product__price-number">115 930 ₽</span>
+
+            <span class="product__price-text">
+              Цена указана без учета монтажа
+            </span>
+          </div>
+          <div class="product__guarantee">
+            <picture>
+              <source srcset="img/guarantee.webp" type="image/webp" />
+              <img src="img/guarantee.png" alt="img" />
+            </picture>
+            Гарантия 2 года на гаражные ворота
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="panel-options">
+  <div class="container">
+    <div class="panel-options__top">
+      <h2 class="panel-options__title">Варианты сэндвич-панелей</h2>
+      <p class="panel-options__text">
+        Гаражные ворота производятся из сэндвич-панелей одного из 5 типов.
+        Однако цена от выбранного варианта – S-, M-, L-гофр, микроволна или
+        филенка может меняться.
+      </p>
+    </div>
+
+    <ul class="panel-options__list">
+      <li class="sandwich-item">
+        <picture>
+          <source srcset="img/sandwich-panels/1.webp" type="image/webp" />
+          <img
+            class="sandwich-item__img"
+            src="img/sandwich-panels/1.png"
+            alt="img"
+          />
+        </picture>
+        <p class="sandwich-item__text">S-гофр</p>
+      </li>
+      <li class="sandwich-item">
+        <picture>
+          <source srcset="img/sandwich-panels/2.webp" type="image/webp" />
+          <img
+            class="sandwich-item__img"
+            src="img/sandwich-panels/2.png"
+            alt="img"
+          />
+        </picture>
+        <p class="sandwich-item__text">M-гофр</p>
+      </li>
+      <li class="sandwich-item">
+        <picture>
+          <source srcset="img/sandwich-panels/3.webp" type="image/webp" />
+          <img
+            class="sandwich-item__img"
+            src="img/sandwich-panels/3.png"
+            alt="img"
+          />
+        </picture>
+        <p class="sandwich-item__text">S-гофр</p>
+      </li>
+      <li class="sandwich-item">
+        <picture>
+          <source srcset="img/sandwich-panels/4.webp" type="image/webp" />
+          <img
+            class="sandwich-item__img"
+            src="img/sandwich-panels/4.png"
+            alt="img"
+          />
+        </picture>
+        <p class="sandwich-item__text">S-гофр</p>
+      </li>
+      <li class="sandwich-item">
+        <picture>
+          <source srcset="img/sandwich-panels/5.webp" type="image/webp" />
+          <img
+            class="sandwich-item__img"
+            src="img/sandwich-panels/5.png"
+            alt="img"
+          />
+        </picture>
+        <p class="sandwich-item__text">S-гофр</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <div class="footer__logo">РОЛСТАВНИ <span>ОРГ</span></div>
+
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__copy">
+            <span>Copyright © “Rolstavni” 2022</span>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Каталог</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Роллетные системы Алютех</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Автоматика для ворот</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Перегрузочная техника</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Шлакбаумы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Перегрузочная техника</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Акции</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">КОМПАНИЯ</span>
+          <ul class="footer__list footer__list--pr">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Поддержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Покупателю</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">КОНТАКТЫ</span>
+
+          <div class="footer__col-inner">
+            <div class="footer-contacts">
+              <div
+                class="footer-contacts__item footer-contacts__item--location"
+              >
+                <p>Офис: Москва, ул. Название улицы 10, корп. 11</p>
+                <p>Производство: Москва, ул. Назваие улицы 12, корп. 13</p>
+              </div>
+              <div class="footer-contacts__item footer-contacts__item--phones">
+                <a class="footer-contacts__link" href="+7495123456798">
+                  + 7 (495) 123 45 67 98
+                </a>
+                <a class="footer-contacts__link" href="+7495123456798">
+                  + 7 (495) 123 45 67 98
+                </a>
+              </div>
+              <div
+                class="footer-contacts__item footer-contacts__item--schedule"
+              >
+                <p>Прием звонков: с 9:00 до 21:00 (МСК)</p>
+              </div>
+              <div class="footer-contacts__item footer-contacts__item--mail">
+                <a class="footer-contacts__link" href="info-rolstavmi@mail.ru">
+                  info-rolstavmi@mail.ru
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__btns">
+              <button class="footer__btn btn btn--green" type="button">
+                Заказать звонок
+              </button>
+              <a class="footer__btn btn btn--blue-light" href="#">
+                Написать на почту
+              </a>
+              <button class="footer__btn btn btn--burgundy" type="button">
+                Вызвать замерщика
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__text">
+        <p>
+          Все права защищены. Вся предоставленая на сайте информация, касающаяся
+          технических характеристик, наличия и стоимость товаров, носит
+          информационный характер и не является публичной офертой. Для более
+          подробной информацнеобходимо обратиться в офис компании или позвонить
+          по телефону +7 (495) 104 70 44
+        </p>
+      </div>
+      <div class="footer-bottom__rating yandex-rating">
+        <span class="yandex-rating__text"
+          >Рейтинг компании <br />
+          в Yandex</span
+        >
+        <ul class="yandex-rating__stars">
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li class="yandex-rating__star yandex-rating__star--disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- nice-select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
