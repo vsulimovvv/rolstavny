@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--back-call">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,41 +50,208 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Обратный звонок</h2>
       <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
       </div>
 
       <form class="form-submit">
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+          <label class="form-submit__label" for="#">Ваше имя</label>
 
           <input
             class="form-submit__input"
-            name="name"
-            id="online-name"
             type="text"
-            placeholder="Введите ваше имя"
+            placeholder="Введите Ваше имя"
             required
           />
         </div>
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
-          </label>
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
 
           <input
             class="form-submit__input"
-            name="tel"
-            id="online-tel"
             type="tel"
             placeholder="+7 (___) ___-__-__"
             required
           />
         </div>
 
-        <button class="form-submit__btn btn" type="button">
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn btn--burgundy" type="button">
           Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Вызвать замерщика</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="#">ФИО*</label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
+
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Адрес проведения замера*
+          </label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Укажите адрес проведения замера"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Адрес проведения замера*
+          </label>
+
+          <div class="form-submit__inputs">
+            <div class="form-submit__input-wrap">
+              <input
+                class="form-submit__input input-time"
+                type="text"
+                placeholder="15:00"
+                required
+              />
+              <span>с</span>
+            </div>
+            <div class="form-submit__input-wrap">
+              <input
+                class="form-submit__input input-time"
+                type="text"
+                placeholder="17:00"
+                required
+              />
+              <span>до</span>
+            </div>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn btn--green" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--write">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Написать нам</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="#">Ваше имя</label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
+
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Сообщения*
+          </label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <div class="form__group">
+          <label
+            class="custom-file-upload custom-file-upload--file-add"
+            for="file-add"
+          >
+            Прикрепить файл <span>(max вес 15 мб)</span>
+          </label>
+          <input
+            class="input-file-upload"
+            id="file-add"
+            type="file"
+            name="file-add"
+            multiple
+          />
+        </div>
+
+        <button class="form-submit__btn btn btn--blue-light" type="button">
+          Отправить
         </button>
       </form>
     </div>
@@ -305,7 +472,10 @@
             <a class="menu-accordion__control-link" href="#">
               Общая информация
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -337,7 +507,10 @@
         <div class="menu-accordion accordion">
           <div class="menu-accordion__control accordion-control" type="button">
             <a class="menu-accordion__control-link" href="#"> Ворота </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -371,7 +544,10 @@
             <a class="menu-accordion__control-link" href="#">
               Автоматика для ворот
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -405,7 +581,10 @@
             <a class="menu-accordion__control-link" href="#">
               Роллетные системы
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -439,7 +618,10 @@
             <a class="menu-accordion__control-link" href="#">
               Роллетные шкафы, стеллажи и системы хранения
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -473,7 +655,10 @@
             <a class="menu-accordion__control-link" href="#">
               Шлагбаумы и перегрузочная техника
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -620,6 +805,19 @@
             </span>
           </a>
 
+          <div class="messangers-dropdown">
+            <div class="messangers-dropdown__links">
+              <a class="messangers-dropdown__link" href="#">
+                <img src="img/telegram.png" alt="img" />
+                <span>Telegram</span>
+              </a>
+              <a class="messangers-dropdown__link" href="#">
+                <img src="img/whatsapp.png" alt="img" />
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
           <button class="phone-box__call btn btn--transparent" type="button">
             <svg>
               <use xlink:href="img/sprite.svg#phone"></use>
@@ -627,6 +825,7 @@
             Обратный звонок
           </button>
         </div>
+
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo" />
         </a>
@@ -752,7 +951,15 @@
             </li>
           </ul>
         </nav>
+        <div class="search-block__input">
+          <input type="text" placeholder="Введите для поиска" />
 
+          <button class="search-block__close" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
         <button class="header__search search-block" type="button">
           <svg>
             <use xlink:href="img/sprite.svg#search"></use>
@@ -813,6 +1020,16 @@
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo" />
         </a>
+        
+        <div class="search-block__input">
+          <input type="text" placeholder="Введите для поиска" />
+
+          <button class="search-block__close" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

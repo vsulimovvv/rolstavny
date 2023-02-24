@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--back-call">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,41 +50,208 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Обратный звонок</h2>
       <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
       </div>
 
       <form class="form-submit">
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+          <label class="form-submit__label" for="#">Ваше имя</label>
 
           <input
             class="form-submit__input"
-            name="name"
-            id="online-name"
             type="text"
-            placeholder="Введите ваше имя"
+            placeholder="Введите Ваше имя"
             required
           />
         </div>
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
-          </label>
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
 
           <input
             class="form-submit__input"
-            name="tel"
-            id="online-tel"
             type="tel"
             placeholder="+7 (___) ___-__-__"
             required
           />
         </div>
 
-        <button class="form-submit__btn btn" type="button">
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn btn--burgundy" type="button">
           Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Вызвать замерщика</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="#">ФИО*</label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
+
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Адрес проведения замера*
+          </label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Укажите адрес проведения замера"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Адрес проведения замера*
+          </label>
+
+          <div class="form-submit__inputs">
+            <div class="form-submit__input-wrap">
+              <input
+                class="form-submit__input input-time"
+                type="text"
+                placeholder="15:00"
+                required
+              />
+              <span>с</span>
+            </div>
+            <div class="form-submit__input-wrap">
+              <input
+                class="form-submit__input input-time"
+                type="text"
+                placeholder="17:00"
+                required
+              />
+              <span>до</span>
+            </div>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn btn--green" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--write">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Написать нам</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные, чтобы наш менеджер смог связаться с вами.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="#">Ваше имя</label>
+
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel"> Телефон* </label>
+
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Сообщения*
+          </label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на обработку<a href="#"> персональных данных</a>
+          </span>
+        </label>
+
+        <div class="form__group">
+          <label
+            class="custom-file-upload custom-file-upload--file-add"
+            for="file-add"
+          >
+            Прикрепить файл <span>(max вес 15 мб)</span>
+          </label>
+          <input
+            class="input-file-upload"
+            id="file-add"
+            type="file"
+            name="file-add"
+            multiple
+          />
+        </div>
+
+        <button class="form-submit__btn btn btn--blue-light" type="button">
+          Отправить
         </button>
       </form>
     </div>
@@ -305,7 +472,10 @@
             <a class="menu-accordion__control-link" href="#">
               Общая информация
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -337,7 +507,10 @@
         <div class="menu-accordion accordion">
           <div class="menu-accordion__control accordion-control" type="button">
             <a class="menu-accordion__control-link" href="#"> Ворота </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -371,7 +544,10 @@
             <a class="menu-accordion__control-link" href="#">
               Автоматика для ворот
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -405,7 +581,10 @@
             <a class="menu-accordion__control-link" href="#">
               Роллетные системы
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -439,7 +618,10 @@
             <a class="menu-accordion__control-link" href="#">
               Роллетные шкафы, стеллажи и системы хранения
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -473,7 +655,10 @@
             <a class="menu-accordion__control-link" href="#">
               Шлагбаумы и перегрузочная техника
             </a>
-            <button class="menu-accordion__control-btn accordion-control-btn" type="button">
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
               <svg>
                 <use xlink:href="img/sprite.svg#chevron"></use>
               </svg>
@@ -620,6 +805,19 @@
             </span>
           </a>
 
+          <div class="messangers-dropdown">
+            <div class="messangers-dropdown__links">
+              <a class="messangers-dropdown__link" href="#">
+                <img src="img/telegram.png" alt="img" />
+                <span>Telegram</span>
+              </a>
+              <a class="messangers-dropdown__link" href="#">
+                <img src="img/whatsapp.png" alt="img" />
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
           <button class="phone-box__call btn btn--transparent" type="button">
             <svg>
               <use xlink:href="img/sprite.svg#phone"></use>
@@ -627,6 +825,7 @@
             Обратный звонок
           </button>
         </div>
+
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo" />
         </a>
@@ -752,7 +951,15 @@
             </li>
           </ul>
         </nav>
+        <div class="search-block__input">
+          <input type="text" placeholder="Введите для поиска" />
 
+          <button class="search-block__close" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
         <button class="header__search search-block" type="button">
           <svg>
             <use xlink:href="img/sprite.svg#search"></use>
@@ -813,6 +1020,16 @@
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo" />
         </a>
+        
+        <div class="search-block__input">
+          <input type="text" placeholder="Введите для поиска" />
+
+          <button class="search-block__close" type="button">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -844,30 +1061,99 @@
       <div class="gates-nav__wrapper">
         <ul class="gates-nav__list">
           <li class="gates-nav__item">
-            <a class="gates-nav__link" href="#garage-gates">Гаражные ворота </a>
+            <a class="gates-nav__link anchor-link" href="#garage-gates"
+              >Гаражные ворота
+            </a>
           </li>
           <li class="gates-nav__item">
-            <a class="gates-nav__link" href="#industrial-gates"
+            <a class="gates-nav__link anchor-link" href="#industrial-gates"
               >Промышленные ворота</a
             >
           </li>
           <li class="gates-nav__item">
-            <a class="gates-nav__link" href="#panoramic-gates">
+            <a class="gates-nav__link anchor-link" href="#panoramic-gates">
               Панорамные ворота
             </a>
           </li>
           <li class="gates-nav__item">
-            <a class="gates-nav__link" href="#entry-gates"> Въездные ворота </a>
+            <a class="gates-nav__link anchor-link" href="#entry-gates">
+              Въездные ворота
+            </a>
           </li>
         </ul>
 
-        <button class="gates-nav__btn btn" type="button">
+        <div class="gates-nav__btn btn" type="button">
           <svg>
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
 
           Связаться
-        </button>
+
+          <div class="phones-dropdown">
+            <div class="phones-dropdown__phones">
+              <div class="phones-dropdown__item">
+                <span class="phones-dropdown__name">
+                  Роллеты, ворота, автоматика
+                </span>
+                <a class="phones-dropdown__phone" href="tel:+74951047044">
+                  +7 (495) 104-70-44
+                </a>
+              </div>
+              <div class="phones-dropdown__item">
+                <span class="phones-dropdown__name">
+                  Роллетные шкафы. Стеллажи EGR
+                </span>
+                <a class="phones-dropdown__phone" href="tel:+74951047044">
+                  +7 (495) 104-70-44
+                </a>
+              </div>
+              <div class="phones-dropdown__item">
+                <span class="phones-dropdown__name">
+                  Ограждения. Индивидуальные проекты
+                </span>
+                <a class="phones-dropdown__phone" href="tel:+74951047044">
+                  +7 (495) 104-70-44
+                </a>
+              </div>
+            </div>
+            <div class="phones-dropdown__btns">
+              <button class="phones-dropdown__btn btn btn--green" type="button">
+                <svg
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 17V8.5C3 6.13333 3.825 4.125 5.475 2.475C7.125 0.825 9.13333 0 11.5 0C13.8667 0 15.875 0.825 17.525 2.475C19.175 4.125 20 6.13333 20 8.5C20 10.8667 19.175 12.875 17.525 14.525C15.875 16.175 13.8667 17 11.5 17H3ZM5 15H11.5C13.3 15 14.8333 14.3667 16.1 13.1C17.3667 11.8333 18 10.3 18 8.5C18 6.7 17.3667 5.16667 16.1 3.9C14.8333 2.63333 13.3 2 11.5 2C9.7 2 8.16667 2.63333 6.9 3.9C5.63333 5.16667 5 6.7 5 8.5V15ZM11.5 12C12.4667 12 13.2917 11.6583 13.975 10.975C14.6583 10.2917 15 9.46667 15 8.5C15 7.53333 14.6583 6.70833 13.975 6.025C13.2917 5.34167 12.4667 5 11.5 5C10.5333 5 9.70833 5.34167 9.025 6.025C8.34167 6.70833 8 7.53333 8 8.5C8 9.46667 8.34167 10.2917 9.025 10.975C9.70833 11.6583 10.5333 12 11.5 12ZM11.5 10C11.0833 10 10.729 9.854 10.437 9.562C10.145 9.27 9.99933 8.916 10 8.5C10 8.08333 10.146 7.729 10.438 7.437C10.73 7.145 11.084 6.99933 11.5 7C11.9167 7 12.271 7.146 12.563 7.438C12.855 7.73 13.0007 8.084 13 8.5C13 8.91667 12.854 9.271 12.562 9.563C12.27 9.855 11.916 10.0007 11.5 10ZM0 17V12H2V17H0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                Вызвать замерщика
+              </button>
+              <button
+                class="phones-dropdown__btn btn btn--burgundy"
+                type="button"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                Обратный звонок
+              </button>
+              <button
+                class="phones-dropdown__btn btn btn--blue-light"
+                type="button"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                Написать нам
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1150,6 +1436,1883 @@
   </div>
 </section>
 
+        <section class="projects">
+  <div class="container">
+    <h2 class="projects__title">Наши работы</h2>
+
+    <div class="projects-tabs">
+      <div class="projects-tabs__top">
+        <div class="projects-tabs__slider swiper">
+          <ul class="projects-tabs__slides swiper-wrapper">
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Роллерные системы
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">Ворота</button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Автоматика для ворот
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Перегрузочная техника
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Шлакбаумы
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Шлакбаумы
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Шлакбаумы
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Шлакбаумы
+              </button>
+            </li>
+            <li class="projects-tabs__slide swiper-slide">
+              <button class="projects-tabs__btn" type="button">
+                Шлакбаумы
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="projects-tabs__arrows">
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+        </div>
+      </div>
+
+      <div class="projects-tabs__content active">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="projects-tabs__content">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="projects-tabs__content">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="projects-tabs__content">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="projects-tabs__content">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="projects-tabs__content">
+        <div class="projects__slider swiper">
+          <ul class="projects__slides swiper-wrapper">
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="projects__slide swiper-slide">
+              <div class="projects-card">
+                <div class="projects-card__info">
+                  <p class="projects-card__address">
+                    Московская область, г. Домодедово, тер. ДНП Ветеран, ул.
+                    Янтарная. Монтаж:
+                  </p>
+
+                  <div class="projects-card__rating rating">
+                    <ul class="rating__stars">
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                      <li class="rating__star">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="projects-card__actions">
+                  <div class="projects-card__quote">
+                    <p class="projects-card__text">
+                      У меня не было места для откатных ворот, а распашные
+                      ставить ваще не хотел, ну и тем более секционные тоже
+                      никак не подходили для улицы, поэтому Анна мне
+                      посоветовала поставить роллетные ворота престиж, я сначала
+                      сомневался, но сейчас понял - это самое крутое решение.
+
+                      <b>Андрей, г. Москва</b>
+                    </p>
+                  </div>
+
+                  <button
+                    class="projects-card__btn btn btn--blue-light"
+                    type="button"
+                  >
+                    У меня похожий проект
+                  </button>
+                </div>
+                <div class="projects-card__right">
+                  <picture>
+                    <source srcset="img/projects/1.webp" type="image/webp" />
+                    <img src="img/projects/1.jpg" alt="img" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         <section class="call" style="background-image: url('img/call-bg.jpg')">
   <div class="container">
     <div class="call__wrapper">
@@ -1169,6 +3332,198 @@
         <button class="call__btn btn" type="button">Вызвать замерщика</button>
       </div>
     </div>
+  </div>
+</section>
+
+        <section class="section-default">
+  <!-- <div class="container"> -->
+  <div class="section-default__wrapper">
+    <div class="section-default__left">
+      <h2 class="section-default__title">СЕО - Заголовок</h2>
+      <p class="section-default__text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+
+    <picture>
+      <source srcset="img/section-default-img.webp" type="image/webp" />
+      <img
+        class="section-default__img"
+        src="img/section-default-img.jpg"
+        alt="img"
+      />
+    </picture>
+  </div>
+  <!-- </div> -->
+</section>
+
+        <section class="tags">
+  <h2 class="visually-hidden">Теги и тд</h2>
+  <div class="container">
+    <div class="tags__wrapper">
+      <ul class="tags__list">
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Главная</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">О компании</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Отзывы</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Контакты</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Консультация от производителя</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Сервис</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Гарантия</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Кредит и рассрочка</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Замер</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Новости и акции</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Публикации</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Фото/Видео</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Документация</a>
+        </li>
+        <li class="tags__tag">
+          <a class="tags__link" href="#">Вопрос-ответ</a>
+        </li>
+      </ul>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--whatsapp" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts">
+  <h2 class="contacts__title"><span>Свяжитесь с нами</span></h2>
+  <div class="container">
+    <ul class="contacts__list">
+      <li class="contacts-item">
+        <picture>
+          <source srcset="img/contacts-icons/1.webp" type="image/webp" />
+          <img
+            class="contacts-item__img"
+            src="img/contacts-icons/1.png"
+            alt="img"
+          />
+        </picture>
+        <div class="contacts-item__info">
+          <b>Офис: </b>
+          <address>
+            Москва <br />
+            ул. Название улицы 10, корп. 11
+          </address>
+        </div>
+      </li>
+      <li class="contacts-item">
+        <picture>
+          <source srcset="img/contacts-icons/2.webp" type="image/webp" />
+          <img
+            class="contacts-item__img"
+            src="img/contacts-icons/2.png"
+            alt="img"
+          />
+        </picture>
+        <div class="contacts-item__info">
+          <b>Производство: </b>
+          <address>
+            Москва <br />
+            ул. Название улицы 12, корп. 13
+          </address>
+        </div>
+      </li>
+      <li class="contacts-item">
+        <picture>
+          <source srcset="img/contacts-icons/3.webp" type="image/webp" />
+          <img
+            class="contacts-item__img"
+            src="img/contacts-icons/3.png"
+            alt="img"
+          />
+        </picture>
+        <div class="contacts-item__info">
+          <b>Телефоны: </b>
+
+          <a class="contacts-item__link" href="#">+ 7 (495) 123 45 67</a>
+          <a class="contacts-item__link" href="#">+ 7 (495) 123 45 67</a>
+        </div>
+      </li>
+      <li class="contacts-item">
+        <picture>
+          <source srcset="img/contacts-icons/4.webp" type="image/webp" />
+          <img
+            class="contacts-item__img"
+            src="img/contacts-icons/4.png"
+            alt="img"
+          />
+        </picture>
+        <div class="contacts-item__info">
+          <b>Прием звонков: </b>
+          <div>с 9:00 до 21:00 (мск)</div>
+          <button class="contacts-item__btn" type="button">
+            заказать звонок
+          </button>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -1426,10 +3781,4 @@
   </body>
 </html>
 
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->
+<
