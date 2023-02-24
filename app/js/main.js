@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+
   // * ===== Nice Select
   $('select').niceSelect();
 
@@ -245,16 +246,37 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // * ===== Show Menu
   (function showMenu() {
-    const menuBtn = document.querySelector('.header__toggle');
+    const menuBtn = document.querySelectorAll('.header__toggle');
     const menu = document.querySelector('.mobile-menu');
     // const body = document.querySelector('body');
-
-    menuBtn.addEventListener('click', (e) => {
-      menu.classList.toggle('active');
-      menuBtn.classList.toggle('active');
-      // body.classList.toggle('no-scroll');
+    menuBtn.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        btn.classList.toggle('active');
+        // body.classList.toggle('no-scroll');
+      });
     });
   })();
+
+  // * ===== Accordion
+  const toggleAccordion = (accordionControl, accordionContent, accordion) => {
+    const filters = document.querySelectorAll(accordionControl);
+    filters.forEach((el) => {
+      if (el) {
+        el.addEventListener('click', (e) => {
+          const target = e.target.closest(accordion);
+          const content = target.querySelector(accordionContent);
+          target.classList.toggle('active');
+          if (target.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      }
+    });
+  };
+  toggleAccordion('.accordion-control-btn', '.accordion-content', '.accordion');
 
   //   // * ===== Modal
   //   (function modals() {
