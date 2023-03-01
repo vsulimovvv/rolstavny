@@ -926,28 +926,34 @@
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Ворота</a>
+              <a class="menu__link active" href="#">Ворота</a>
+              <span class="menu__overlay"></span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Автоматика для ворот</a>
+              <span class="menu__overlay"></span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Роллетные системы</a>
+              <span class="menu__overlay"></span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
                 ролетые шкафы <br />
                 и системы хранения
               </a>
+              <span class="menu__overlay"></span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">стеллажи egr</a>
+              <span class="menu__overlay"></span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
                 шлагбаумы и <br />
                 перегрузочная техника
               </a>
+              <span class="menu__overlay"></span>
             </li>
           </ul>
         </nav>
@@ -1020,7 +1026,7 @@
         <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo" />
         </a>
-        
+
         <div class="search-block__input">
           <input type="text" placeholder="Введите для поиска" />
 
@@ -1037,7 +1043,10 @@
 
 
       <main class="main">
-        <section class="promo" style="background-image: url('img/promo/measurement.jpg')">
+        <section
+  class="promo"
+  style="background-image: url('img/promo/measurement.jpg')"
+>
   <div class="container">
     <div class="promo__wrapper">
       <div class="promo__offer">
@@ -1049,6 +1058,24 @@
           Профессиональный замерщик приедет в удобное для вас время
         </p>
         <button class="promo__btn btn" type="button">Вызвать замерщика</button>
+      </div>
+      <div class="breadcrumbs breadcrumbs--absolute">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Ворота</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Гаражные ворота</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">
+              Секционный гаражные ворота
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -1179,7 +1206,7 @@
               </picture>
             </div>
             <div class="garage-doors-card__body">
-              <h3 class="garage-doors-card__title">Prestige</h3>
+              <h3 class="garage-doors-card__title"><a href="#">Prestige</a></h3>
               <p class="garage-doors-card__text">
                 Повышенная энергоэффективность, уникальные конструкторские
                 решения, неограниченные варианты оформления.
@@ -1249,7 +1276,7 @@
               </picture>
             </div>
             <div class="garage-doors-card__body">
-              <h3 class="garage-doors-card__title">Trend</h3>
+              <h3 class="garage-doors-card__title"><a href="#">Trend</a></h3>
               <p class="garage-doors-card__text">
                 Оптимальное соотношение цены и качества, энергоэффективность,
                 элементы безопасности в стандартном комплекте.
